@@ -13,6 +13,8 @@ app = Flask(__name__)
 common = Common(app)
 r = redis.from_url(os.environ['REDIS_URL'])
 
+from config import author
+
 
 class Entry(object):
     def __init__(self, path):
@@ -63,7 +65,7 @@ def gen_entries():
 @common.cache.cached(timeout=60)
 def index():
 
-    return render_template('index.html', entries=gen_entries())
+    return render_template('index.html', entries=gen_entries(), author=author)
 
 
 @app.route('/entry/<slug>')
@@ -72,7 +74,8 @@ def entry(slug):
         entry = Entry('entries/{}.md'.format(slug))
         entry.mark_read()
 
-        return render_template('entry.html', entry=entry, entries=gen_entries())
+        return render_template('entry.html', entry=entry, entries=gen_entries(),
+            author=author)
     except IOError:
         abort(404)
 

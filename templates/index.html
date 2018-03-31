@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Kenneth Reitz's Journal</title>
+    <title>{{ author.name }}'s Journal</title>
     <link rel="stylesheet" href="tufte.css"/>
     <link rel="stylesheet" href="latex.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,14 +11,14 @@
   <body>
     <article>
       <h1 id="tufte-css">A (Public) Journal</h1>
-      <p class="subtitle">Kenneth Reitz</p>
+      <p class="subtitle">{{ author.name }}</p>
       <section>
         <p>Welcome to my public journal &mdash; a place for essays that don't quite belong on my blog, but deserve a home of some sort online. Feel free to read and enjoy these random thoughts, and take away from them what you wish!</p>
       </section>
 
       <section>
         <h2 id="fundamentals">Thoughts & Musings</h2>
-        <h3 id="fundamentals--sections-and-headers">A collection of hand-written essays by Kenneth Reitz.</h3>
+        <h3 id="fundamentals--sections-and-headers">A collection of hand-written essays by {{ author.name }}.</h3>
         <ul>
         {% for entry in entries %}
           <li><a href="/entry/{{ entry.slug }}">{{ entry.title }}</a>.</li>
@@ -28,7 +28,7 @@
       <section>
         <p>The code for this journal is <a href="https://github.com/kennethreitz/journal">available on GitHub</a>.</p>
       </section>
-      <p><img width="62%" src="https://d3vv6lp55qjaqc.cloudfront.net/items/0m3c0f2C0k3K1L2Z3R1r/kr.svg?X-CloudApp-Visitor-Id=2577" alt="Kenneth Reitz"></p>
+      <p><img width="62%" src="{{ author.image }}" alt="Kenneth Reitz"></p>
 
     </article>
 
