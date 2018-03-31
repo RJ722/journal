@@ -1,5 +1,5 @@
-NAME = 'Kenneth Reitz'
-IMAGE = 'https://d3vv6lp55qjaqc.cloudfront.net/items/0m3c0f2C0k3K1L2Z3R1r/kr.svg?X-CloudApp-Visitor-Id=2577'
+NAME = 'Rahul Jha'
+IMAGE = 'https://user-images.githubusercontent.com/15556382/38166660-32f47482-3545-11e8-967a-5e15a3474eae.jpeg'
 
 
 class Author:
