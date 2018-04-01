@@ -19,6 +19,8 @@ been following [Surveillance Self-Defense](https://ssd.eff.org) lately.
 - I've been trying to switch to vim, but it gets painful when I try to get any
 real work done, I am awfully slow.
 
+[EDIT]:
+- And, I've started using KeePassXC for managing my passwords.
 
 Other plans:
 
