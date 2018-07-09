@@ -9,7 +9,7 @@ creating Python bindings from C/C++.
 
 New softwares in life:
 - I started using Thunderbird for managing my emails, along with EnigMail for
-PGP - [Find my key here](https://rj722.tech/public.txt). [[How to?](https://ssd.eff.org/en/module/how-use-pgp-mac-os-x)]
+PGP - [Find my key here](https://rj722.tech/public.txt). [How to?](https://ssd.eff.org/en/module/how-use-pgp-mac-os-x)
 - I started using [weechat](https://weechat.org/) for IRC and I am absolutely
 loving it.
 - I also configured [EliteBNC](https://www.elitebnc.org/) so that I don't miss
