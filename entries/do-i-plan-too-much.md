@@ -1,7 +1,7 @@
 # Do I plan too much?
 
 For quite sometime, I've noticed that I am never out of ideas, but nearly
-everytime I fail to deliver a product based on that. Why? Perhaps, because I
+everytime, I fail to deliver a product based on that. Why? Perhaps, because I
 sub-consiously keep reminding myself of the next thing I need to do, never
 actually concentrating enough on the task at hand. Yes, planning in advance can
 turn out to be productive, but far too much definitely hinders with your ability
