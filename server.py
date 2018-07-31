@@ -34,7 +34,8 @@ class Entry(object):
 
 def gen_entries():
     def gen():
-        files = ['entries/{}'.format(e) for e in os.listdir('entries')]
+        files = ['entries/{}'.format(e) for e in os.listdir(
+            'entries') if e.endswith('.md')]
         for f in reversed(sorted(files, key=os.path.getctime)):
             yield Entry(f)
 
@@ -45,7 +46,6 @@ def gen_entries():
 @app.route('/')
 @common.cache.cached(timeout=60)
 def index():
-
     return render_template('index.html', entries=gen_entries(), author=author)
 
 
@@ -53,8 +53,8 @@ def index():
 def entry(slug):
     try:
         entry = Entry('entries/{}.md'.format(slug))
-
-        return render_template('entry.html', entry=entry, entries=gen_entries(),
+        return render_template(
+            'entry.html', entry=entry, entries=gen_entries(),
             author=author)
     except IOError:
         abort(404)
